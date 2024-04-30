@@ -1,0 +1,623 @@
+/* Reset default margin, padding, and box model for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Apply box model to the HTML element */
+html {
+  box-sizing: border-box;
+}
+
+/* Style the header section */
+header {
+  position: fixed; /* Fixed position at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99; /* Stack the header on top */
+}
+
+/* Style the logo in the header */
+.logo {
+  font-size: 2em;
+  color: #f99c1a;
+  user-select: none;
+  margin-left: -50px;
+}
+
+/* Style navigation links */
+.navigation a {
+  position: relative;
+  font-size: 1.1em;
+  color: #f99c1a;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+/* Style the "Login" button in the navigation */
+.navigation .btnLogin-popup {
+  border-radius: 7px;
+  border-style: none;
+  border: 2px solid #f99c1a;
+  padding: 10px 30px;
+  background-color: transparent;
+  color: #f99c1a;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  user-select: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+/* Hover effect for the "Login" button */
+.navigation .btnLogin-popup:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* Apply styles to the body, including background image */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(images/crunch_gym_large.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Style a wrapper for content */
+.wrapper {
+  width: 350px;
+  height: auto;
+  background: transparent;
+  padding: 10px 15px;
+  margin: 10px 0;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* Style images within the wrapper */
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+  margin-bottom: 10px;
+}
+
+/* Style input boxes within the wrapper */
+.wrapper .input-box {
+  display: flex;
+  width: 100%;
+  padding: 10px 12px;
+  position: relative;
+}
+
+/* Style form inputs within the input box */
+.wrapper .input-box input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+/* Placeholder text color */
+input::placeholder {
+  color: black;
+}
+
+/* Styling for elements with class "bx" within the input box */
+.wrapper .input-box .bx {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+/* Styling for elements with class "remember" */
+.wrapper .remember {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+/* Styling for elements with class "remembera" within the "remember" section */
+.wrapper .remember a {
+  text-decoration: none;
+}
+
+/* Hover effect for links in the "remember" section */
+.wrapper .remember:hover a {
+  text-decoration: underline;
+}
+
+/* Styling for the submit button */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  box-shadow: 0px 0px 5px black;
+  margin-bottom: 10px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+}
+
+/* Styling for the "Login" button */
+input[value="Login"] {
+  font-weight: 500;
+}
+
+/* Styling for elements with class "register" */
+.wrapper .register {
+  display: inline-flex;
+  justify-content: space-around;
+  margin-left: 15px;
+}
+
+/* Styling for paragraphs and links within the "register" section */
+.register p,
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  word-spacing: 1px;
+}
+
+/* Margin and hover effect for links in the "register" section */
+.register a {
+  margin-left: 90px;
+}
+
+/* Hover effect for links in the "register" section */
+.register:hover a {
+  text-decoration: underline;
+}
+/* Styles for the "profile" sections */
+.progress,
+.profile {
+  background-color: #2c2b2b;
+  color: #f99c1a;
+  width: 100%;
+}
+
+/* Styling for a BMI button */
+.bmibutton {
+  padding: 5px 5px 5px 5px;
+  background-color: #f99c1a;
+  border-radius: 10px;
+}
+/* Styling for a container element */
+.container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+/* Styling for headings in the "profile" section */
+.profile h1 {
+  text-align: center;
+  margin-top: 130px;
+}
+
+/* Styling for forms in the "progress" section */
+form {
+  margin-top: 100px;
+}
+
+/* Styling for form groups */
+.form-group {
+  margin-bottom: 100px;
+  margin-right: 300px;
+}
+
+/* Styling for labels in forms */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Styling for text and number input fields in forms */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for radio input labels */
+.radio-label {
+  font-weight: 900;
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
+
+/* Styling for radio input groups */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+/* Styling for radio input labels */
+.radio-group label {
+  margin-right: 10px;
+}
+
+/* Styling for radio input fields */
+input[type="radio"] {
+  margin-right: 5px;
+  margin-left: 50px;
+}
+
+/* Styling for the submit button in forms */
+.submit-button {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 650px;
+  margin-bottom: 80px;
+}
+
+/* Hover effect for the submit button */
+.submit-button:hover {
+  background-color: black;
+  color: #f99c1a;
+}
+
+/* Styling for "progress tracking" page */
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Styling for grid layout */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+/* Styling for cells in the grid */
+.cell {
+  text-align: center;
+  padding: 10px;
+}
+
+.cell1 {
+  text-align: center;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.cell2 {
+  text-align: center;
+  padding: 10px;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 50px 0px -170px 0px;
+}
+
+/* Styling for date inputs and text inputs within the "flex-container" */
+.flex-container [type="date"],
+.flex-container input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Styling for chart images */
+.chart img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 200px;
+}
+
+/* Styling for elements with class "totalmeas" */
+.totalmeas {
+  display: flex;
+  width: 30%;
+  margin-left: 60px;
+  margin-bottom: 60px;
+  gap: 10px;
+}
+
+/* Styling for the "progress" heading */
+.progress h1 {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 120px;
+}
+
+/* Styling for the footer */
+.footer {
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Styling for social icons */
+.social-icons {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+}
+
+/* Styling for social icons */
+.social-icons a {
+  text-decoration: none;
+  color: #f99c1a;
+  margin: 0 10px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+/* Styling for the "nutrition tracking" section */
+.nutrition {
+  background-color: #2c2b2b;
+}
+
+/* Styling for the nutrition form container */
+.nutritiontracking {
+  background-color: #2c2b2b;
+  background-image: none;
+}
+.nutrition-form {
+  width: 100%;
+  padding: 20px;
+  background-color: #2c2b2b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Styling for containers within the "nutrition" section */
+.tablecont {
+  display: flex;
+}
+
+/* Styling for elements with class "meal-dropdown" and "add-food" */
+.meal-dropdown,
+.add-food {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Styling for the "Add" button */
+.add-button {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Styling for tables */
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+/* Styling for table elements */
+table,
+th,
+td {
+  border: none;
+}
+
+/* Styling for elements with class "macro" */
+.macro {
+  width: 50%;
+  padding: 20px;
+  background-color: #2c2b2b;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 90px;
+}
+
+/* Styling for headings within the "macro" section */
+.macro h2 {
+  text-align: center;
+}
+
+/* Styling for elements with class "macro-inputs" */
+.macro-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+/* Styling for elements with class "macro-row" */
+.macro-row {
+  width: 48%;
+  margin-bottom: 10px;
+}
+
+/* Styling for the macro chart */
+.macro-chart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for images within the macro chart */
+.macro-chart img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Styling for chat container */
+.chat {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border: 1px solid #f99c1a;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 20px;
+  background-color: #2c2b2b;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  margin-bottom: 60px;
+}
+
+/* Styling for chat window */
+.chat-window {
+  max-height: 300px;
+  overflow-y: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Styling for chat message */
+.message {
+  background-color: #f2f2f2;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+  color: #2c2b2b;
+}
+
+/* Styling for  message input */
+#message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Styling for send button */
+#send-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f99c1a;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Styling for hover effect of send button */
+#send-button:hover {
+  background-color: #c37506;
+}
+
+/* Styling for tooltip  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  text-decoration: underline;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  left: 105%;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip_message p {
+  margin-left: 657px;
+  margin-top: 10px;
+}
+.card {
+  margin: auto;
+  background-color: #2c2b2b;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-footer {
+  padding: 10px;
+  background-color: #2c2b2b;
+  border-top: 1px solid #ccc;
+  height: 70px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 10px;
+}
+
+.bmibutton {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.submit-button {
+  background-color: #f99c1a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.sudoheader {
+  display: flex;
+  justify-content: center;
+}
